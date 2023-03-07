@@ -8,7 +8,7 @@ required_providers {
   }
   required_version = ">= 1.2.0"
 
-# Backup in S3
+# Backup in S3 before that, create a bucket manually
   backend "s3" {
     bucket              = "mycomponents-tfstate1"
     key                 = "state/terraform.tfstate"
