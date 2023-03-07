@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - 80:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=terraform-20230307195909837700000003.cciqztcfdbjp.us-east-1.rds.amazonaws.com # example endpoint RDS connect to DB
+      - WORDPRESS_DB_USER=       #Username database is entered at the beginning of the infrastructure launch
+      - WORDPRESS_DB_PASSWORD=   #pass is entered at the beginning of the infrastructure launch
+      - WORDPRESS_DB_NAME=mydb    
+

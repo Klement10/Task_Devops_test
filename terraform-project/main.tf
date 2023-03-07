@@ -7,6 +7,14 @@ required_providers {
     }
   }
   required_version = ">= 1.2.0"
+
+# Backup in S3
+  backend "s3" {
+    bucket              = "mycomponents-tfstate1"
+    key                 = "state/terraform.tfstate"
+    region              = "us-east-1"
+    encrypt             = true
+ }
 }
 provider "aws" {
  region  = "us-east-1"
