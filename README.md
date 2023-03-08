@@ -12,6 +12,7 @@
 + Terraform v1.3.9
 + Ansible 2.12.3
 + AWS Cli v2
++ Git 2.30.2
 
 -----
 **After installing the above applications**
