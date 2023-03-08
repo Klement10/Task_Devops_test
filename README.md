@@ -101,3 +101,4 @@ Stop and remove the containers
 ```
 $ sudo docker compose down
 ```
+**Read and pay attention to the comments in the files!!!**
