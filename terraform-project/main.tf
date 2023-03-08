@@ -186,7 +186,7 @@ resource "aws_security_group" "websg" {
     from_port       = 22
     to_port         = 22
     protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] #only for the test task
   }
 
    # allow inbound icmp traffic 
@@ -247,7 +247,7 @@ resource "aws_security_group" "database-sg" {
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] #only for the test task
   }
 
   egress {
